@@ -1,18 +1,14 @@
 # OctoAcme Project Management Docs
 
-This folder contains the core documentation for how OctoAcme manages projects from idea to release. The process is designed to align stakeholders, keep delivery organized, and ensure that value is delivered in small, testable increments. The lifecycle begins with initiation to validate the problem, confirm business value, identify stakeholders, and define early goals and risks. Once the initiative is approved, the team moves into planning to clarify scope, priorities, milestones, dependencies, and the Definition of Done.
+This folder contains the core guidance for how OctoAcme manages projects from idea to release. The process is designed to align stakeholders, keep delivery organized, and help cross-functional teams deliver predictable, high-quality outcomes.
 
-During execution, work is tracked through a project board and regular team syncs. The Project Manager coordinates delivery, timelines, risks, and communication; the Product Manager owns outcomes and prioritization; developers implement the work; and QA validates whether it meets the agreed acceptance criteria. Teams follow a cadence of standups, weekly alignment, and milestone reviews, while escalations follow a clear path from the team to the PM, Product Lead, and sponsor when needed. Communication is built around a single source of truth, explicit ownership, and regular updates so blockers, decisions, and dependencies stay visible.
+## Project management processes summary
 
-Quality is a core requirement in every phase of the lifecycle. New logic should be covered with unit tests, integration tests where relevant, and smoke tests for important user flows. CI should run automated tests, linting, and security checks before code is approved for merge, and releases should not proceed until acceptance criteria are met, rollback plans are documented, and post-deploy verification is complete. After each sprint, release, milestone, or incident, the team uses a retrospective to capture lessons learned and convert them into a small set of action items with clear owners and due dates.
+OctoAcme begins with initiation: validating the business problem, outcomes, stakeholders, timeline, risks, and estimated resource needs. Once a project is approved, the team moves into planning by defining scope, prioritizing the backlog, estimating work, documenting acceptance criteria, and setting a Definition of Done. During execution, work is tracked on a project board, progress is reviewed in standups and team syncs, blockers are escalated quickly, and risks are monitored and updated in a shared register.
 
-## Project lifecycle overview
+The team’s operating model relies on clear roles and responsibilities. Project Managers coordinate schedule, dependencies, communication, and risk; Product Managers own outcomes and backlog priority; developers build and test the solution; and QA validates quality against acceptance criteria. Quality is reinforced through unit tests, integration tests where relevant, smoke tests for critical flows, security scanning in CI, and manual QA when needed.
 
-1. Initiation: validate the problem, stakeholders, and expected outcomes.
-2. Planning: define the backlog, scope, milestones, dependencies, and Definition of Done.
-3. Execution: deliver work iteratively, track progress, and manage blockers and risks.
-4. Release: verify quality, deploy safely, and communicate changes to stakeholders.
-5. Close & improvement: capture lessons learned and track follow-up actions.
+When a milestone or release is ready, the team validates that acceptance criteria are met, confirms CI and security checks are passing, reviews release notes, and prepares a rollback plan. After each sprint, release, or significant incident, OctoAcme captures lessons learned and tracks a small set of action items to improve the process over time. This keeps the organization focused on measurable value, faster learning, and safer execution.
 
 ## Document index
 
@@ -27,4 +23,4 @@ Quality is a core requirement in every phase of the lifecycle. New logic should 
 
 ## How to use these docs
 
-Use this folder as the entry point for OctoAcme’s project management process. Read the overview and initiation guidance to understand the basic lifecycle, then move into the planning, execution, and release documents for the detailed operating model. The role and communication documents help teams interpret responsibilities and align around a shared cadence and escalation process.
+Use this folder as the entry point for OctoAcme’s project management process. Start with the project overview and initiation guidance, then move into planning, execution, and release materials as the project progresses. The docs are meant to be practical references for recurring work, stakeholder alignment, risk management, and continuous improvement.
