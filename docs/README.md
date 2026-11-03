@@ -1,14 +1,18 @@
 # OctoAcme Project Management Docs
 
-This folder contains the core project management guidance for OctoAcme. These documents provide a shared understanding of how the team validates new work, plans delivery, executes across functions, releases features safely, and continuously improves how work gets done.
+This folder contains the core documentation for how OctoAcme manages projects from idea to release. The process is designed to align stakeholders, keep delivery organized, and ensure that value is delivered in small, testable increments. The lifecycle begins with initiation to validate the problem, confirm business value, identify stakeholders, and define early goals and risks. Once the initiative is approved, the team moves into planning to clarify scope, priorities, milestones, dependencies, and the Definition of Done.
 
-## Project management processes summary
+During execution, work is tracked through a project board and regular team syncs. The Project Manager coordinates delivery, timelines, risks, and communication; the Product Manager owns outcomes and prioritization; developers implement the work; and QA validates whether it meets the agreed acceptance criteria. Teams follow a cadence of standups, weekly alignment, and milestone reviews, while escalations follow a clear path from the team to the PM, Product Lead, and sponsor when needed. Communication is built around a single source of truth, explicit ownership, and regular updates so blockers, decisions, and dependencies stay visible.
 
-OctoAcme starts each initiative by validating the business need, measurable outcomes, stakeholders, and initial risks. The team captures the problem statement, success metrics, a high-level timeline, resource needs, and early dependencies in a project one-pager before moving forward. Once stakeholders align and the decision gate is reached, the initiative enters planning: the team prioritizes backlog items, defines acceptance criteria and a Definition of Done, estimates work, identifies dependencies and risks, and prepares a milestone plan.
+Quality is a core requirement in every phase of the lifecycle. New logic should be covered with unit tests, integration tests where relevant, and smoke tests for important user flows. CI should run automated tests, linting, and security checks before code is approved for merge, and releases should not proceed until acceptance criteria are met, rollback plans are documented, and post-deploy verification is complete. After each sprint, release, milestone, or incident, the team uses a retrospective to capture lessons learned and convert them into a small set of action items with clear owners and due dates.
 
-During execution, work is tracked on a project board using clear stages such as Backlog, Ready, In Progress, In Review, QA, and Done. The Project Manager coordinates delivery, timelines, risks, and updates; the Product Manager owns the product outcome and backlog priorities; developers build and test; QA validates quality and acceptance; and stakeholders provide input and approvals. Teams use regular standups, weekly PM and product syncs, and milestone reviews to surface blockers, manage dependencies, and keep decisions visible.
+## Project lifecycle overview
 
-Quality is built into each phase of the lifecycle. New logic should include unit and integration testing where appropriate, smoke tests should validate critical user flows, and CI should run automated checks including tests, linting, and security scanning before merges and releases. Release readiness requires acceptance criteria to be met, release notes and rollback plans to be prepared, and smoke testing to be completed in staging before production deployment. After sprints, releases, milestones, or incidents, the team runs retrospectives to capture what worked, what needs improvement, and which actions should be carried into the backlog.
+1. Initiation: validate the problem, stakeholders, and expected outcomes.
+2. Planning: define the backlog, scope, milestones, dependencies, and Definition of Done.
+3. Execution: deliver work iteratively, track progress, and manage blockers and risks.
+4. Release: verify quality, deploy safely, and communicate changes to stakeholders.
+5. Close & improvement: capture lessons learned and track follow-up actions.
 
 ## Document index
 
@@ -23,4 +27,4 @@ Quality is built into each phase of the lifecycle. New logic should include unit
 
 ## How to use these docs
 
-Use the overview and lifecycle documents to understand the standard OctoAcme process, then move into the more detailed guides for planning, execution, risk management, and release practices. This set is designed to give new contributors a practical framework for delivering work with clear ownership, measurable outcomes, and consistent communication.
+Use this folder as the entry point for OctoAcme’s project management process. Read the overview and initiation guidance to understand the basic lifecycle, then move into the planning, execution, and release documents for the detailed operating model. The role and communication documents help teams interpret responsibilities and align around a shared cadence and escalation process.
